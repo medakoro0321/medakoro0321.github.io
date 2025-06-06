@@ -1,1 +1,0 @@
-# medakoro0321.github.io
