@@ -30,6 +30,7 @@ body {
     /* グラデーション */
     background: linear-gradient(to bottom, #2b57a8, #171920);
     color: white;
+    font-family: "Noto Sans JP", sans-serif;
 }
 
 .subtitles {
