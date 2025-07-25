@@ -2,13 +2,19 @@
 
 <head>
     <title>Introduction</title>
+    <!--全体スタイル-->
+    <link rel="stylesheet" href="new_style.css">
+    <!--フォント-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200&display=swap');
+    </style>
 </head>
 
 <body>
     <header>
         <div class="header">
             <div class="header-inner">
-                <img src="images/shark_fin.png" alt="Logo Image" class="logo-picture">
+                <img src="assets/images/shark_fin.png" alt="Logo Image" class="logo-picture">
                 <h1 id="%header_inner_hello_title">%header_inner_hello_title</h1>
                 <p id="%header_inner_hello_subtitle">%header_inner_hello_subtitle</p>
                 <!--後で追加ページ追加するときに使う-->
@@ -20,7 +26,7 @@
     <div class="container">
         <!--よくある写真がパラパラ動くやつ(語彙力の死)-->
         <div class="pictures">
-            <img src="images/medakoro.png" alt="Pictures#1" class="medakoro-picture">
+            <img src="assets/images/medakoro.png" alt="Pictures#1" class="medakoro-picture">
         </div>
         <!--テキスト等部分-->
         <!--自己紹介部分-->
@@ -39,7 +45,7 @@
         <div id="%container_content_developing_lists"></div>
     </div>
     <div class="control_pannel">
-        <button type="button" class="TranslateButton">TranslateButton</button>
+        <button type="button" class="TranslateButton button">TranslateButton</button>
     </div>
     <!--スクリプト-->
     <script src="translate.js"></script>

@@ -5,12 +5,12 @@ let NowLang = "";
 // 開いた際に更新
 window.onload = function () {
     // 日本語に設定
-    AllTranslatePage(ja);
+    AllTranslatePage("ja");
 }
 
 // イベントリスナーの追加
 TranslateButton.addEventListener('click', function () {
-    AllTranslatePage(change);
+    AllTranslatePage("change");
 });
 
 function AllTranslatePage(ChangeLang) {
@@ -18,7 +18,6 @@ function AllTranslatePage(ChangeLang) {
     if (ChangeLang === "change") {
         if (NowLang === "ja") ChangeLang = "en";
         else if (NowLang === "en") ChangeLang = "zh";
-        else if (NowLang === "zh") ChangeLang = "ja";
         else ChangeLang = "ja"; // 初期値を日本語に設定
     } else {
         // 言語ごとの処理
@@ -35,19 +34,36 @@ function AllTranslatePage(ChangeLang) {
                 break;
         }
     }
-    // 言語の変更
-    ApplyTrasnlate(ChangeLang);
+    // 言語データロード
+    LoadTranslate(ChangeLang);
 }
 
-function ApplyTrasnlate(ChangeLang) {
+async function LoadTranslate(ChangeLang) {
     // jsonファイルからデータを取得
-    fetch(`./lang/${ChangeLang}.json`)
+    await fetch(`./lang/${ChangeLang}.json`)
         .then(response => response.json())
         .then(data => {
-            // 各要素のテキストを更新
-            document.querySelector('.TranslateButton').textContent = data.TranslateButton;
             // 他の要素も同様に更新
             NowLang = ChangeLang; // 現在の言語を更新
+            ApplyTranslate(data);
         })
         .catch(error => console.error('Error fetching translation:', error));
+}
+
+function ApplyTranslate(data) {
+    // ぺージ内の全要素を取得
+    let AllElement = document.querySelectorAll('[id^="%"]')
+    AllElement.forEach(element => {
+        // 要素のIDから言語キーを取得
+        let key = element.id.slice(1); // %を除去
+        // データから対応するテキストを取得
+        let TranslatedText = data[key];
+        // テキストが存在する場合は更新
+        if (data[key]) {
+            console.log(`Translated ${key} to: ${TranslatedText}`);
+            element.innerHTML = TranslatedText;
+        } else {
+            console.warn(`Translation key "${key}" not found in ${data}`);
+        }
+    });
 }

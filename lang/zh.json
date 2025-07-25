@@ -1,0 +1,33 @@
+{
+    "header_inner_hello_title": "Welcome to Medakoro's Homepage!",
+    "header_inner_hello_subtitle": "A person who lives everything on mood",
+    "container_title_introduction": "<<< Self Introduction / Introduction>>>",
+    "container_content_introduction": [
+        "Hello! I'm just a shark-loving student living in Japan. Zenless Zone Zero,<br>it's fun, right?</br> Everyone should try it! \n",
+        "I create various things. Mods, games, and more...."
+    ],
+    "container_title_program_languages": "<<< Programming Languages I Use / USE PROGRAMMING LANGUAGES>>>",
+    "container_content_program_languages": [
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Python",
+        "C#"
+    ],
+    "container_title_developing": "<<< Currently Developing / DEVELOPING>>>",
+    "container_content_developing_lists": {
+        "ChronosFall": {
+            "title": "Chronos Fall",
+            "content": [
+                "In the near future, most of the world has collapsed due to a sudden occurrence of <br>\"space-time collapse\"</b>. However, some areas miraculously survived the collapse and continue to exist as <b>\"time fault zones\"</b>. There, the surviving humanity quietly lives their lives.",
+                "As the protagonist of <b>\"STPS\"</b>, a public security force established in the time fault zones, pursue the mystery of the space-time collapse and aim for a reunion with your brother who was lost several years ago."
+            ]
+        },
+        "TechnifterPartners": {
+            "title": "Technifter Partners",
+            "content": [
+                "Adds electrically-powered machines called <b>Technifters</b> to Minecraft, allowing you to sweep away enemies and more (details TBD)"
+            ]
+        }
+    }
+}

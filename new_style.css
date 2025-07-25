@@ -1,0 +1,88 @@
+.header {
+    /* ヘッダーの高さ */
+    height: 120px;
+    /* 背景色 */
+    background-color: #181e27;
+    /* 上下の余白確保 */
+    padding: 10px 0;
+    /* 文字色カラーを白にする */
+    color: white;
+}
+
+.header-inner {
+    /* 左右の余白確保 */
+    padding: 0 20px;
+    /* 横and真ん中に並べる */
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.logo-picture {
+    /* ロゴの大きさ */
+    width: 100px;
+    height: 100px;
+    /* 左寄せ */
+    float: left;
+}
+
+body {
+    /* グラデーション */
+    background: linear-gradient(to bottom, #2b57a8, #171920);
+    color: white;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.titles {
+    text-align: center;
+    background-color: #172b4d;
+    margin: 5px;
+}
+
+.urllink {
+    /* リンクの色 */
+    color: #00bcd4;
+}
+
+/* タイトルの下線 */
+.underline {
+    padding: 4px;
+    background-color: #3f5270;
+    margin: 0px 0 10px 0;
+}
+
+/* ボタン */
+.button {
+    /* ボタンの背景色 */
+    background-color: #3f5270;
+    /* 文字色 */
+    color: white;
+    /* 角丸 */
+    border-radius: 5px;
+    /* パディング */
+    padding: 10px 20px;
+    /* ボタンの位置 */
+    align-items: right;
+    /* マウスオーバー時の変化 */
+    cursor: pointer;
+    transition: all 0.5s;
+}
+/* ボタンのホバー効果 */
+.button:hover {
+    background-color: black;
+    color: white;
+}
+
+.indent1 {
+    /* 左側の余白 */
+    margin-left: 1em;
+}
+
+.bottom {
+    /* 背景色 */
+    background-color: #1a1e2c;
+    /* 上下の余白確保 */
+    padding: 10px 0;
+    /* 文字色カラーを白にする */
+    color: white;
+}
