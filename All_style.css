@@ -290,3 +290,22 @@ p,
 .showcase-image.active {
     opacity: 1;
 }
+
+/*可能プログラミング言語の一覧*/
+.container_content_program_languages_split {
+    position:relative;
+    text-align: center;
+    background : rgb(8, 32, 46);
+    left: 25%;
+    width: 50%;
+    height: 4%;
+    border-color: #00bcd4;
+    border-radius: 100px;
+    box-shadow: 10px 5px 5px #00bcd4;
+    font-weight: bold;
+    transition: transform .6s ease-in-out
+}
+
+.container_content_program_languages_split:hover {
+    transform:scale(1.2,1.2)
+}

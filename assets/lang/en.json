@@ -7,10 +7,12 @@
         "Oh, by the way, I recently returned to VRChat",
         "What is Java? (?????)"
     ],
+    "container_title_showcase": "<< SHOWCASE >>",
     "container_title_introduction": "<<< Self-Introduction / Introduction>>>",
     "container_content_introduction": [
-        "Hello! I'm just a shark-loving student living in Japan. Zenless Zone Zero,<br>is fun, isn't it?</br> Everyone should play it! \n",
-        "I'm making various things. Mods, games, etc...."
+        "Hello! I'm just a shark-loving student living in Japan. Zenless Zone Zero, isn't it fun? Everyone should play it! ",
+        "I'm making various things, like mods and games....",
+        "I recently returned to VRChat, please be nice to me!"
     ],
     "container_title_program_languages": "<<< Programming Languages Used / USE PROGRAMMING LANGUAGES>>>",
     "container_content_program_languages": [
@@ -18,16 +20,20 @@
         "HTML",
         "CSS",
         "Python",
-        "C#"
+        "C#",
+        "Java....?"
     ],
     "container_title_developing": "<<< DEVELOPING>>>",
     "ChronosFall_title": "Chronos Fall",
     "ChronosFall_content": [
-        "A near-future world where most of it has collapsed due to a sudden <b>\"space-time collapse\"</b>. However, some regions miraculously escaped the collapse and continue to exist as <b>\"time faults\"</b>, where the surviving humanity quietly lives.",
-        "As the protagonist of the public safety organization <b>\"STPS\"</b>, established in the time fault, you pursue the mystery of the space-time collapse and aim to reunite with your brother, who was lost years ago."
+        "A near-future world where most of it has collapsed due to a sudden **\"space-time collapse\"**. However, some regions miraculously escaped the collapse and continue to exist as **\"time faults\"**, where the surviving humanity quietly lives.",
+        "As the protagonist of the public safety organization **\"STPS\"**, established in the time fault, you pursue the mystery of the space-time collapse and aim to reunite with your brother, who was lost years ago.",
+        "*Action Role Playing Game - (Planned) Unity DRP 6000.0.29F1*"
     ],
     "TechnifterPartners_title": "Technifter Partners",
     "TechnifterPartners_content": [
-        "Adds electric-powered machines, <b>Technifters</b>, to Minecraft, allowing you to wipe out enemies (undecided)."
-    ]
+        "Adds electric-powered machines, **Technifters**, to Minecraft, allowing you to wipe out enemies (undecided)",
+        "*Minecraft v1.21.1 NeoForge*"
+    ],
+    "control_button_translate" : "翻译 / 翻訳"
 }
