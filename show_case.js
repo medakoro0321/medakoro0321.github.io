@@ -31,8 +31,8 @@ function showSlide(index) {
     });
 }
 
-// 自動スライド（3秒間隔）
+// 自動スライド
 setInterval(() => {
     currentSlide = (currentSlide + 1) % images.length;
     showSlide(currentSlide);
-}, 3000);
+}, 5000);
