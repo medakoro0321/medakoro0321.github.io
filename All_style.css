@@ -1,0 +1,270 @@
+.header {
+    /* ヘッダーの高さ */
+    height: auto;
+    /* 背景色 */
+    background: linear-gradient(180deg, #016dc7, #8ecffc, #cad2db);
+    /* 上下の余白確保 */
+    padding: 10px 0;
+    /* 文字色カラーを白にする */
+    color: white;
+}
+
+.header-inner {
+    /* 左右の余白確保 */
+    padding: 0 20px;
+    /* 横and真ん中に並べる */
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+
+.header-inner h1,
+.header-inner p {
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: inline-block;
+    box-decoration-break: clone;
+    background: linear-gradient(90deg, #5e81b8 0%, #5e81b8 100%);
+    animation: slide_background 1.2s ease-out 0.3s both;
+    /* 0.3秒遅延 */
+}
+
+@keyframes slide_background {
+    0% {
+        background-size: 0% 100%;
+        background-repeat: no-repeat;
+        background-position: left center;
+    }
+
+    100% {
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: left center;
+    }
+
+}
+
+.logo-picture {
+    /* ロゴの大きさ */
+    width: 100px;
+    height: 100px;
+    /* 左寄せ */
+    float: left;
+}
+
+body {
+    /* グラデーション */
+    background: linear-gradient(to bottom, #2d5cb4, #0b2453, #020b2b);
+    color: white;
+    font-family: "Noto Sans JP", sans-serif;
+    position: relative;
+    /* ::before の基準とするため */
+    min-height: 100vh;
+    /* body の最小高さをビューポートに合わせる */
+    overflow-x: hidden;
+    /* 横方向のオーバーフローを防ぐ */
+    margin: 0;
+    padding: 0;
+    font-size: 120%;
+}
+
+.container {
+    min-height: calc(100vh - 140px);
+    /* ヘッダー分を除いた高さ */
+    position: relative;
+    z-index: 1;
+    padding-bottom: 100px;
+    /* ページの高さを確保 */
+}
+
+/* 波エフェクト用のコンテナ */
+.wave-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.wave-effect {
+    position: absolute;
+    left: 0;
+    width: 150%;
+    height: 80vh;
+    /* 波の高さを調整 */
+    background: linear-gradient(180deg,
+            transparent 0%,
+            transparent 15%,
+            rgba(2, 45, 61, 0.6) 50%,
+            transparent 85%,
+            transparent 100%);
+    animation: fall 8s linear infinite;
+    transform: skewY(3deg);
+}
+
+@keyframes fall {
+    0% {
+        top: -80vh;
+        /* 波の高さ分上から開始 */
+        transform: translateY(0) skewY(3deg);
+    }
+
+    100% {
+        top: 100%;
+        /* ページの最下部まで移動 */
+        transform: translateY(80vh) skewY(3deg);
+        /* 波の高さ分さらに下へ */
+    }
+}
+
+.titles {
+    text-align: center;
+    background-color: #172b4d;
+    margin: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.urllink {
+    /* リンクの色 */
+    color: #00bcd4;
+}
+
+/* タイトルの下線 */
+.underline {
+    padding: 4px;
+    background-color: #3f5270;
+    margin: 0px 0 10px 0;
+    position: relative;
+    z-index: 1;
+}
+
+/* ボタン */
+.button {
+    /* ボタンの背景色 */
+    background-color: #3f5270;
+    /* 文字色 */
+    color: white;
+    /* 角丸 */
+    border-radius: 5px;
+    /* パディング */
+    padding: 10px 20px;
+    /* ボタンの位置 */
+    align-items: right;
+    /* マウスオーバー時の変化 */
+    cursor: pointer;
+    transition: all 0.5s;
+    position: relative;
+    z-index: 1;
+}
+
+/* ボタンのホバー効果 */
+.button:hover {
+    background-color: black;
+    color: white;
+}
+
+.indent1 {
+    /* 左側の余白 */
+    margin-left: 1em;
+}
+
+.bottom {
+    /* 背景色 */
+    background-color: #060c24;
+    /* 上下の余白確保 */
+    padding: 10px 0;
+    /* 文字色カラーを白にする */
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+/*マージンdiv専用*/
+.margin {
+    /* 上下の余白確保 */
+    margin: 70px 0;
+    /* 横幅を100%にする */
+    width: 100%;
+    /* 高さを確保 */
+    height: 20px;
+}
+
+/* コンテンツが波の上に来るようにz-indexを設定 */
+.NoJavaScriptWarning,
+.header,
+.pictures,
+.developing_lists,
+.control_pannel,
+p,
+.ChronosFall,
+.TechnifterPartners {
+    position: relative;
+    z-index: 1;
+}
+
+/* 開発中の物のリスト */
+.TechnifterPartners {
+    background-color: rgba(23, 43, 77, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.ChronosFall {
+    background-color: rgba(23, 43, 77, 0.5);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+/*Aタグで色が変わらないようにする*/
+.TechnifterPartners a,
+.ChronosFall a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/*NoJavaScript*/
+.NoJavaScriptWarning {
+    background-color: rgba(224, 4, 4, 0.8);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* NoJavaScriptの警告メッセージタイトル部分 */
+#NJSW_Title {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    animation: MoveXText 1s ease-in-out infinite;
+}
+
+@keyframes MoveXText {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*開発中の物の画像*/
+.ChronosFallPicture,
+.TechnifterPartnersPicture {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}

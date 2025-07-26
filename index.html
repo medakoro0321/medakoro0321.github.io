@@ -1,10 +1,9 @@
-<html>
+<html class="lenis lenis-smooth">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Introduction</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Introduction</title>
+    <!--全体スタイル-->
+    <link rel="stylesheet" href="All_style.css">
     <!--フォント-->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200&display=swap');
@@ -12,81 +11,89 @@
 </head>
 
 <body>
-    <div class="content">
-        <!--上のほうのタイトルバーみたいなやつ-->
-        <header class="header">
+    <!--JavaScriptが正常に読み込まれていないとき-->
+    <noscript>
+        <div class="NoJavaScriptWarning">
+            <h1 id="NJSW_Title">!WARNING!</h1>
+            <h1>JavaScriptが無効になっています</h1>
+            <p>このページはJavaScriptを使用しています。JavaScriptを有効にしてください。</p>
+            <p>ブラウザの設定でJavaScriptを有効にする方法を確認してください。</p>
+            <p>JavaScriptが有効になっていない場合、ページの一部の機能が正しく動作しない可能性があります。</p>
+        </div>
+    </noscript>
+    <!-- 波エフェクト用のコンテナ -->
+    <div class="wave-container">
+        <div class="wave-effect"></div>
+    </div>
+    <!--ヘッダー-->
+    <header>
+        <div class="header">
             <div class="header-inner">
-                <img src="assets/images/shark_fin.png" alt="ロゴ画像" class="logo-picture">
-                <h1>めだころ</h1>
-                <p>いつも物を作っている人です</p>
-            </div>
-        </header>
-        <div class="main">
-            <h2 class="subtitles">
-                <<< 自己紹介 / Introduction >>>
-            </h2>
-            <div class="underline"></div>
-            <p>こんにちは! 日本住みのただのサメ好きな学生です。<br> ゼンゼロ、楽しいよね みんなもやろう!</p>
-            <p>いろいろと、物を作っています。modとか、ゲームとか....</p>
-            <h3 class="subtitles">
-                <<< できる言語 / CAN LANGUAGES >>>
-            </h3>
-            <div class="underline"></div>
-            <ul>
-                <li>JavaScript</li>
-                <li>C#</li>
-                <li>Python</li>
-                <li>HTML/CSS</li>
-            </ul>
-            <h3 class="subtitles">
-                <<< 開発中 / DEVELOPING >>>
-            </h3>
-            <div class="underline"></div>
-            <ul>
-                <li>ChronosFall [自作ゲーム]</li>
-                <li type="square" class="indent1">
-                    <i>突如として発生した<b>"時空崩壊"</b>により、世界の大部分が崩壊した近未来。しかし、一部の地域は奇跡的に崩壊を免れ、<b>"時間断層"</b>として存在し続けていた。そこでは、生き残った人類がひっそりと生活を営んでいる。</i>
-                </li>
-                <li type="square" class="indent1"><i>時間断層に設立された公安、<b>「STPS」</b>の主人公として、時空崩壊の謎を追い、数年前に失われた弟との再会を目指す。</i>
-                </li>
-                <li>Technifter Partners [MOD]</li>
-                <li type="square" class="indent1">
-                    <i>マインクラフト内に電気で動く機械、<b>テクニフター(Technifter)</b>を追加し、敵を一掃したりすることができます(未定)</i>
-                </li>
-            </ul>
-            <h3 class="subtitles">
-                <<< 連絡方法 / CONTACTS >>>
-            </h3>
-            <div class="underline"></div>
-            <div class="contact-links">
-                <ul>
-                    <li>Discord : medakoro0321 (ID)</li>
-                    <li>Twitter : <a href="https://x.com/medakoro0321" class="urllink">LINK</a></li>
-                    <li>Github : <a href="https://github.com/medakoro0321/medakoro0321" class="urllink">LINK</a></li>
-                </ul>
-            </div>
-            <h3 class="subtitles">
-                <<< 好きなこと(もの) / LIKES >>>
-            </h3>
-            <div class="underline"></div>
-            <ul>
-                <li>サメ</li>
-                <li>ゲーム</li>
-                <li type="square" class="indent1">Zenless Zone Zero</li>
-                <li type="square" class="indent1">Minecraft</li>
-                <li>プログラミング</li>
-                <li>作曲</li>
-            </ul>
-        </div>
-        <div class="bottom">
-            <div class="buttons">
-                <h3 class="subtitles">
-                    <<< TRANSLATE >>>
-                </h3>
-                <p>Click below to translate to English.</p>
-                <input type="button" value="Change to English" class="button" onclick="location.href='english.html'">
+                <img src="assets/images/Introduction/shark_fin.png" alt="Logo Image" class="logo-picture">
+                <h1 id="%header_inner_hello_title"><span>%header_inner_hello_title</span></h1>
+                <p id="%header_inner_hello_subtitle"><span>%header_inner_hello_subtitle</span></p>
             </div>
         </div>
+    </header>
+    <!--メイン-->
+    <div class="container">
+        <!--よくある写真がパラパラ動くやつ(語彙力の死)-->
+        <div class="pictures">
+            <img src="assets/images/medakoro.png" alt=""
+                class="medakoro-picture"><span>写真のギャラリーみたいなのは作ろうとは思ってるけど、どんな写真置こうかな～で終わってる、<br>うーんこの</span>
+        </div>
+        <div class="margin"></div>
+        <!--テキスト等部分-->
+        <!--自己紹介部分-->
+        <h2 class="titles" id="%container_title_introduction">%container_title_introduction</h2>
+        <div class="underline"></div>
+        <p id="%container_content_introduction">%container_content_introduction</p>
+        <div class="margin"></div>
+        <!--できるプログラミング言語-->
+        <h3 class="titles" id="%container_title_program_languages">%container_title_program_languages</h3>
+        <div class="underline"></div>
+        <div id="%container_content_program_languages"></div>
+        <div class="margin"></div>
+        <!--開発中の物-->
+        <h3 class="titles" id="%container_title_developing">%container_title_developing</h3>
+        <div class="underline"></div>
+        <!--ショーケースのように開発中の物を表示。 Githubリンク+Webページを作成予定-->
+        <div id="developing_lists_pictures"></div>
+        <div class="developing_lists">
+            <div class="ChronosFall">
+                <a href="">
+                    <img class="ChronosFallPicture" src="./assets/images/ChronosFall/TitleLogo.png" alt="">
+                </a>
+                <h1 id="%ChronosFall_title">%ChronosFall_title</h1>
+                <span id="%ChronosFall_content">%ChronosFall_content</span>
+            </div>
+            <div class="TechnifterPartners">
+                <a href="">
+                    <img class="TechnifterPartnersPicture" src="./assets/images/ChronosFall/TitleLogo.png" alt="">
+                </a>
+                <h1 id="%TechnifterPartners_title">%TechnifterPartners_title</h1>
+                <span id="%TechnifterPartners_content">%TechnifterPartners_content</span>
+            </div>
+        </div>
+    </div>
+    <!--翻訳ボタン(後で場所を移動)-->
+    <div class="control_pannel">
+        <button type="button" class="TranslateButton button">TranslateButton</button>
+    </div>
+    <div class="margin"></div>
+    <!--フッター-->
+    <div class="bottom">
+        <p class="bottom-text">2025 medakoro0321 / Github Pages</p>
+        <p class="bottom-text">License : CC BY-NC-SA 4.0</p>
+        <p class="bottom-text">This page's content is not affiliated with any company or organization.</p>
+    </div>
+    <!--スクリプト-->
+    <!-- Lenisライブラリを最初に読み込む -->
+    <script src="https://unpkg.com/lenis@1.3.8/dist/lenis.min.js"></script>
+    <!--スクロールに慣性をつける-->
+    <script src="scroll.js"></script>
+    <!--翻訳-->
+    <script src="translate.js"></script>
 </body>
 
 </html>
