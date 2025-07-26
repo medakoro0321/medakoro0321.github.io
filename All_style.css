@@ -274,7 +274,6 @@ p,
 #showcase_pictures {
     position: relative;
     top:10px;
-    /*緊急回避 auto*/
     height: 920px;
 }
 
