@@ -268,3 +268,26 @@ p,
     border-radius: 8px;
     margin-bottom: 20px;
 }
+
+/*ショーケース画像*/
+/*親*/
+#showcase_pictures {
+    position: relative;
+    top:10px;
+    min-height: 400px;
+    height: auto;
+}
+
+.showcase-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.showcase-image.active {
+    opacity: 1;
+}
