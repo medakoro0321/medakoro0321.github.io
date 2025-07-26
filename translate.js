@@ -24,7 +24,6 @@ function AllTranslatePage(ChangeLang) {
         switch (ChangeLang) {
             case "ja":
                 //ja
-
                 break;
             case "en":
                 //en
@@ -63,8 +62,15 @@ function ApplyTranslate(data) {
         if (data[key]) {
             //もしArray要素なら
             if (Array.isArray(TranslatedText)) {
-                console.warn(` [ ARRAY ] Translated ${key} to: ${TranslatedText}`);
-                element.innerHTML = TranslatedText;
+                if (key === "header_inner_hello_subtitle") {
+                    // 特定の要素に対しては改行を挿入
+                    var random = Math.floor(Math.random() * (TranslatedText.length));
+                    console.warn(` [ +ARRAY ] Translated ${key} to: ${TranslatedText[random]} with random index ${random}`);
+                    element.innerHTML = TranslatedText[random];
+                } else {
+                    console.warn(` [ ARRAY ] Translated ${key} to: ${TranslatedText}`);
+                    element.innerHTML = TranslatedText;
+                }
             } else {
                 console.log(`Translated ${key} to: ${TranslatedText}`);
                 element.innerHTML = TranslatedText;
