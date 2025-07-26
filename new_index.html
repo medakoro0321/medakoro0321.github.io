@@ -11,14 +11,17 @@
 </head>
 
 <body>
+    <!-- 波エフェクト用のコンテナ -->
+    <div class="wave-container">
+        <div class="wave-effect"></div>
+    </div>
+    <!--ヘッダー-->
     <header>
         <div class="header">
             <div class="header-inner">
-                <img src="assets/images/shark_fin.png" alt="Logo Image" class="logo-picture">
+                <img src="assets/images/Introduction/shark_fin.png" alt="Logo Image" class="logo-picture">
                 <h1 id="%header_inner_hello_title">%header_inner_hello_title</h1>
                 <p id="%header_inner_hello_subtitle">%header_inner_hello_subtitle</p>
-                <!--後で追加ページ追加するときに使う-->
-                <a href="ANOTHER PAPE LINK">ANOTHER PAPE LINK</a>
             </div>
         </div>
     </header>
@@ -28,24 +31,44 @@
         <div class="pictures">
             <img src="assets/images/medakoro.png" alt="Pictures#1" class="medakoro-picture">
         </div>
+        <div class="margin"></div>
         <!--テキスト等部分-->
         <!--自己紹介部分-->
         <h2 class="titles" id="%container_title_introduction">%container_title_introduction</h2>
         <div class="underline"></div>
         <p id="%container_content_introduction">%container_content_introduction</p>
+        <div class="margin"></div>
         <!--できるプログラミング言語-->
         <h3 class="titles" id="%container_title_program_languages">%container_title_program_languages</h3>
         <div class="underline"></div>
         <div id="%container_content_program_languages"></div>
+        <div class="margin"></div>
         <!--開発中の物-->
         <h3 class="titles" id="%container_title_developing">%container_title_developing</h3>
         <div class="underline"></div>
         <!--ショーケースのように開発中の物を表示。 Githubリンク+Webページを作成予定-->
         <div id="developing_lists_pictures"></div>
-        <div id="%container_content_developing_lists"></div>
+        <div class="developing_lists">
+            <div class="ChronosFall">
+                <h1 id="%ChronosFall_title">%ChronosFall_title</h1>
+                <span id="%ChronosFall_content">%ChronosFall_content</span>
+            </div>
+            <div class="TechnifterPartners">
+                <h1 id="%TechnifterPartners_title">%TechnifterPartners_title</h1>
+                <span id="%TechnifterPartners_content">%TechnifterPartners_content</span>
+            </div>
+        </div>
     </div>
+    <!--翻訳ボタン(後で場所を移動)-->
     <div class="control_pannel">
         <button type="button" class="TranslateButton button">TranslateButton</button>
+    </div>
+    <div class="margin"></div>
+    <!--フッター-->
+    <div class="bottom">
+        <p class="bottom-text">2025 medakoro0321 / Github Pages</p>
+        <p class="bottom-text">License : CC BY-NC-SA 4.0</p>
+        <p class="bottom-text">This page's content is not affiliated with any company or organization.</p>
     </div>
     <!--スクリプト-->
     <script src="translate.js"></script>

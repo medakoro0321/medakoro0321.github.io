@@ -54,14 +54,22 @@ function ApplyTranslate(data) {
     // ぺージ内の全要素を取得
     let AllElement = document.querySelectorAll('[id^="%"]')
     AllElement.forEach(element => {
+        console.log(element);
         // 要素のIDから言語キーを取得
         let key = element.id.slice(1); // %を除去
         // データから対応するテキストを取得
         let TranslatedText = data[key];
         // テキストが存在する場合は更新
         if (data[key]) {
-            console.log(`Translated ${key} to: ${TranslatedText}`);
-            element.innerHTML = TranslatedText;
+            //もしArray要素なら
+            if (Array.isArray(TranslatedText)) {
+                console.warn(` [ ARRAY ] Translated ${key} to: ${TranslatedText}`);
+                element.innerHTML = TranslatedText;
+            } else {
+                console.log(`Translated ${key} to: ${TranslatedText}`);
+                element.innerHTML = TranslatedText;
+            }
+
         } else {
             console.warn(`Translation key "${key}" not found in ${data}`);
         }
