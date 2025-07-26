@@ -37,11 +37,10 @@
     </header>
     <!--メイン-->
     <div class="container">
-        <!--よくある写真がパラパラ動くやつ(語彙力の死)-->
-        <div class="pictures">
-            <img src="assets/images/medakoro.png" alt=""
-                class="medakoro-picture"><span>写真のギャラリーみたいなのは作ろうとは思ってるけど、どんな写真置こうかな～で終わってる、<br>うーんこの</span>
-        </div>
+        <!--ショーケース-->
+        <h2 class="titles" id="%container_title_showcase">%container_title_showcase</h2>
+        <div class="underline"></div>
+        <div id="showcase_pictures"></div>
         <div class="margin"></div>
         <!--テキスト等部分-->
         <!--自己紹介部分-->
@@ -78,9 +77,10 @@
     </div>
     <!--翻訳ボタン(後で場所を移動)-->
     <div class="control_pannel">
-        <button type="button" class="TranslateButton button">TranslateButton</button>
+        <button type="button" class="TranslateButton button"
+            id="%control_button_translate">%control_button_translate</button>
+        <button type="button" class="BackUpPage" id="%control_button_backup">%control_button_backup</button>
     </div>
-    <div class="margin"></div>
     <!--フッター-->
     <div class="bottom">
         <p class="bottom-text">2025 medakoro0321 / Github Pages</p>
@@ -94,6 +94,8 @@
     <script src="scroll.js"></script>
     <!--翻訳-->
     <script src="translate.js"></script>
+    <!--ショーケースを表示-->
+    <script src="show_case.js"></script>
 </body>
 
 </html>

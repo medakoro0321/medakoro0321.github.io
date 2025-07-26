@@ -49,7 +49,7 @@ function AllTranslatePage(ChangeLang) {
 
 async function LoadTranslate(ChangeLang) {
     // jsonファイルからデータを取得
-    await fetch(`./lang/${ChangeLang}.json`)
+    await fetch(`./assets/lang/${ChangeLang}.json`)
         .then(response => response.json())
         .then(data => {
             // 他の要素も同様に更新
