@@ -274,7 +274,6 @@ p,
 #showcase_pictures {
     position: relative;
     top:10px;
-    /*緊急回避 auto*/
     height: 920px;
 }
 
@@ -310,7 +309,6 @@ p,
 .container_content_program_languages_split:hover {
     transform:scale(1.2,1.2)
 }
-
 /*ゲームの一覧*/
 .container_content_play_games_split {
     position:relative;
