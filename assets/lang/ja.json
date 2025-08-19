@@ -5,7 +5,8 @@
         "ただのサメ好きな学生",
         "ゼンゼロをやっている人",
         "そういえば最近VRChat復帰しました",
-        "Javaって何ですか?(?????)"
+        "Javaaaaaaaaaaaaaaaaaaaaaa!",
+        "ところでザンニーっていつ復刻するんですか"
     ],
     "container_title_showcase" : "<< ショーケース / SHOWCASE >>",
     "container_title_introduction": "<<< 自己紹介 / Introduction>>>",
@@ -16,12 +17,12 @@
     ],
     "container_title_program_languages": "<<< 使ってるプログラミング言語 / USE PROGRAMMING LANGUAGES>>>",
     "container_content_program_languages": [
-        "JavaScript",
-        "HTML",
-        "CSS",
-        "Python",
-        "C#",
-        "Java....?"
+        "JavaScript(Webサイト)",
+        "HTML(プログラミン..グ?)",
+        "CSS(プログラミン....グ???)",
+        "Python(数字系)",
+        "C#(Unity/カイル君)",
+        "Java(DiscordBot)"
     ],
     "container_title_games": "<< ゲーム / GAMES >>",
     "container_content_play_games": [
