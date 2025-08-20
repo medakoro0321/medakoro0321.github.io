@@ -1,39 +1,43 @@
 {
-    "header_inner_hello_title": "Welcome to Medakoro's Homepage!",
-    "header_inner_hello_subtitle": [
-        "A person who lives everything on a whim",
-        "Just a student who loves sharks",
-        "Someone playing Zenless Zone Zero",
-        "Oh, by the way, I recently returned to VRChat",
-        "What is Java? (?????)"
-    ],
-    "container_title_showcase": "<< SHOWCASE >>",
-    "container_title_introduction": "<<< Self-Introduction / Introduction>>>",
-    "container_content_introduction": [
-        "Hello! I'm just a shark-loving student living in Japan. Zenless Zone Zero, isn't it fun? Everyone should play it! ",
-        "I'm making various things, like mods and games....",
-        "I recently returned to VRChat, please be nice to me!"
-    ],
-    "container_title_program_languages": "<<< Programming Languages Used / USE PROGRAMMING LANGUAGES>>>",
-    "container_content_program_languages": [
-        "JavaScript",
-        "HTML",
-        "CSS",
-        "Python",
-        "C#",
-        "Java....?"
-    ],
-    "container_title_developing": "<<< DEVELOPING>>>",
-    "ChronosFall_title": "Chronos Fall",
-    "ChronosFall_content": [
-        "A near-future world where most of it has collapsed due to a sudden **\"space-time collapse\"**. However, some regions miraculously escaped the collapse and continue to exist as **\"time faults\"**, where the surviving humanity quietly lives.",
-        "As the protagonist of the public safety organization **\"STPS\"**, established in the time fault, you pursue the mystery of the space-time collapse and aim to reunite with your brother, who was lost years ago.",
-        "*Action Role Playing Game - (Planned) Unity DRP 6000.0.29F1*"
-    ],
-    "TechnifterPartners_title": "Technifter Partners",
-    "TechnifterPartners_content": [
-        "Adds electric-powered machines, **Technifters**, to Minecraft, allowing you to wipe out enemies (undecided)",
-        "*Minecraft v1.21.1 NeoForge*"
-    ],
-    "control_button_translate" : "翻译 / 翻訳"
-}
+        "header_inner_hello_title": "Welcome to Medakoro's Homepage!",
+        "header_inner_hello_subtitle": [
+            "Someone who lives purely on mood",
+            "Just a shark-loving student",
+            "A person who plays Zenless Zone Zero",
+            "Oh, and I recently returned to VRChat",
+            "Javaaaaaaaaaaaaaaaaaaaaaa!",
+            "By the way, when will Zani get a rerun?",
+        "<b><a href='https://www.youtube.com/watch?v=AtckPWbmmgU'>LISTEN NOW!!!!</a></b>"
+        ],
+        "container_title_showcase": "<< SHOWCASE >>",
+        "container_title_introduction": "<<< INTRODUCTION >>>",
+        "container_content_introduction": [
+            "Hello! I'm just a shark-loving student living in Japan. Zenless Zone Zero is fun, isn't it? Everyone should play it!",
+            "I create various things. Mods, games, and more....",
+            "I recently returned to VRChat, please be nice to me!"
+        ],
+        "container_title_program_languages": "<<< PROGRAMMING LANGUAGES I USE >>>",
+        "container_content_program_languages": [
+            "JavaScript (Websites)",
+            "HTML (Programmin..g?)",
+            "CSS (Programmin....g???)",
+            "Python (Number stuff)",
+            "C# (Unity/Kyle-kun)",
+            "Java (Discord Bot)"
+        ],
+        "container_title_games": "<< GAMES >>",
+        "container_content_play_games": [
+            "Minecraft",
+            "Wuthering Waves",
+            "Minecraft JE",
+            "VRChat"
+        ],
+        "container_title_developing": "<<< DEVELOPING >>>",
+        "ChronosFall_title": "<i>Chronos Fall</i>",
+        "ChronosFall_content": [
+            "In the near future, most of the world collapsed due to a sudden <br>\"<b>Space-Time Collapse</b>\". However, some areas miraculously escaped destruction and continued to exist as <b>\"Time Fractures\"</b>. There, the surviving humanity quietly continues their lives.",
+            "As the protagonist of <b>\"STPS\"</b>, a public security force established in the Time Fractures, you pursue the mystery of the Space-Time Collapse and aim to reunite with your brother who was lost several years ago.",
+            "<i>Action Role Playing Game - Unity HDRP 6000.0.29F1</i>"
+        ],
+        "control_button_translate": "中文 / 日本語"
+    }

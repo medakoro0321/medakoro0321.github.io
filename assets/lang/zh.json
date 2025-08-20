@@ -1,39 +1,43 @@
 {
     "header_inner_hello_title": "欢迎来到Medakoro的主页！",
     "header_inner_hello_subtitle": [
-        "一个随心所欲生活的人",
-        "一个只是喜欢鲨鱼的学生",
-        "一个正在玩《绝区零》的人",
-        "对了，我最近又回到了VRChat",
-        "Java是什么？(?????)"
+        "完全凭心情生活的人",
+        "只是一个喜欢鲨鱼的学生",
+        "玩绝区零的人",
+        "说起来最近回归了VRChat",
+        "Javaaaaaaaaaaaaaaaaaaaaaa!",
+        "话说赞妮什么时候复刻啊",
+        "<b><a href='https://www.youtube.com/watch?v=AtckPWbmmgU'>立即收听!!!!</a></b>"
     ],
-    "container_title_showcase": "<< 展示 / SHOWCASE >>",
-    "container_title_introduction": "<<< 自我介绍 / Introduction>>>",
+    "container_title_showcase": "<< 作品展示 >>",
+    "container_title_introduction": "<<< 自我介绍 >>>",
     "container_content_introduction": [
-        "你好！我是一个住在日本的，只是喜欢鲨鱼的学生。《绝区零》很有趣吧？大家一起来玩吧！",
-        "我正在制作各种东西，比如模组、游戏等等……",
-        "我最近又回到了VRChat，请多关照！"
+        "你好！我是住在日本的一个喜欢鲨鱼的学生。绝区零很有趣，对吧？大家都来玩吧！",
+        "我制作各种各样的东西。模组啊，游戏啊....",
+        "最近回归了VRChat，请多关照！"
     ],
-    "container_title_program_languages": "<<< 正在使用的编程语言 / USE PROGRAMMING LANGUAGES>>>",
+    "container_title_program_languages": "<<< 使用的编程语言 >>>",
     "container_content_program_languages": [
-        "JavaScript",
-        "HTML",
-        "CSS",
-        "Python",
-        "C#",
-        "Java....?"
+        "JavaScript（网站）",
+        "HTML（编程..语言？）",
+        "CSS（编程....语言？？？）",
+        "Python（数字相关）",
+        "C#（Unity/Kyle君）",
+        "Java（Discord机器人）"
     ],
-    "container_title_developing": "<<< 开发中 / DEVELOPING>>>",
-    "ChronosFall_title": "Chronos Fall",
+    "container_title_games": "<< 游戏 >>",
+    "container_content_play_games": [
+        "Minecraft",
+        "鸣潮",
+        "Minecraft JE",
+        "VRChat"
+    ],
+    "container_title_developing": "<<< 开发中 >>>",
+    "ChronosFall_title": "<i>Chronos Fall</i>",
     "ChronosFall_content": [
-        "一个近未来世界，大部分区域因突然发生的**“时空崩坏”**而坍塌。然而，部分区域奇迹般地幸免于难，并作为**“时间断层”**继续存在，幸存的人类在那里悄然生活。",
-        "作为在时间断层中设立的公安组织**“STPS”**的主人公，你将追寻时空崩坏之谜，并致力于与数年前失散的弟弟重逢。",
-        "*动作角色扮演游戏 - （预定）Unity DRP 6000.0.29F1*"
+        "在近未来，由于突然发生的<br>\"<b>时空崩坏</b>\"，世界的大部分都崩塌了。然而，一些地区奇迹般地免于崩坏，作为<b>\"时间断层\"</b>继续存在着。在那里，幸存的人类静静地继续着他们的生活。",
+        "作为在时间断层中设立的公安<b>\"STPS\"</b>的主人公，追寻时空崩坏的谜团，目标是与数年前失踪的弟弟重逢。",
+        "<i>动作角色扮演游戏 - Unity HDRP 6000.0.29F1</i>"
     ],
-    "TechnifterPartners_title": "Technifter Partners",
-    "TechnifterPartners_content": [
-        "在Minecraft中添加电力驱动的机器**“Technifter”**，可以用来消灭敌人（未定）",
-        "*Minecraft v1.21.1 NeoForge*"
-    ],
-    "control_button_translate" : "翻訳 / Translate"
+    "control_button_translate": "日本語 / English"
 }
