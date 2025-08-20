@@ -16,8 +16,18 @@ function ShowCaseImageSet() {
 
         //画像を表示する要素に追加
         document.getElementById('showcase_pictures').appendChild(imgElement);
+        
+        imgElement.onload = function () {
+            // 画像が読み込まれた後の処理
+            const displayHeight = this.offsetHeight;
+            console.log(`DisplayHeight{i + 1}: ${displayHeight}px`);
+            // 画像の高さからマージンを設定
+            this.style.height = `${displayHeight}px`;
+        }
     }
 }
+
+
 
 let currentSlide = 0;
 const images = document.querySelectorAll('.showcase-image');
