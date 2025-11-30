@@ -5,13 +5,13 @@
         "VRChat楽しすぎる"
     ],
     "container_title_showcase" : "<< ショーケース / ShowCase >>",
-    "container_title_introduction": "<<< 自己紹介 / Introduction >>>",
+    "container_title_introduction": "<<< 自己紹介 / Self-Introduction >>>",
     "container_content_introduction": [
         "こんにちは! 日本住みのただのサメ好きな人です。",
         "暇なときに様々な物を作ってたりします。主にゲーム",
         "VRChatやりすぎてKnownUserまで行きました、仲良くしてください!"
     ],
-    "container_title_program_languages": "<<< 好きな言語 / Like Programming Languages >>>",
+    "container_title_program_languages": "<<< 好きな言語 / Favorite Languages >>>",
     "container_content_program_languages": [
         "C# [ Unity ]",
         "Java [ Minecraft Modding ]",
@@ -26,7 +26,7 @@
         "Discord",
         "Github"
     ],
-    "container_title_developing": "<<< 開発中 / Developing >>>",
+    "container_title_developing": "<<< 開発中 / In Development >>>",
     "ChronosFall_title": "<i>Chronos Fall</i>",
     "ChronosFall_content": [
         "突如として発生した<br>\"時空崩壊\"</b>により、世界の大部分が崩壊した近未来。しかし、一部の地域は奇跡的に崩壊を免れ、<b>\"時間断層\"</b>として存在し続けていた。そこでは、生き残った人類がひっそりと生活を営んでいる。",
