@@ -1,44 +1,37 @@
 {
-    "header_inner_hello_title": "欢迎来到Medakoro的主页！",
+    "header_inner_hello_title": "欢迎来到 Samekoro 的主页!",
     "header_inner_hello_subtitle": [
-        "完全凭心情生活的人",
-        "只是一个喜欢鲨鱼的人",
-        "玩绝区零的人",
-        "说起来最近回归了VRChat",
-        "Javaaaaaaaaaaaaaaaaaaaaaa!",
-        "话说赞妮什么时候复刻啊",
-        "<b><a href='https://www.youtube.com/watch?v=AtckPWbmmgU'>立即收听!!!!</a></b>",
-        "其实我改名了"
+        "最近只在开发",
+        "VRChat 太好玩了"
     ],
-    "container_title_showcase": "<< 作品展示 >>",
-    "container_title_introduction": "<<< 自我介绍 >>>",
+    "container_title_showcase": "<< 展示 / ShowCase >>",
+    "container_title_introduction": "<<< 自我介绍 / Introduction >>>",
     "container_content_introduction": [
-        "你好！我是住在日本的一个喜欢鲨鱼的人。绝区零很有趣，对吧？大家都来玩吧！",
-        "我制作各种各样的东西。模组啊，游戏啊....",
-        "最近回归了VRChat，请多关照！"
+        "大家好！我只是一个住在日本的鲨鱼爱好者。",
+        "闲暇时我会制作各种东西，主要是游戏。",
+        "我玩 VRChat 玩到 KnownUser 等级了。请多多关照！"
     ],
-    "container_title_program_languages": "<<< 使用的编程语言 >>>",
+    "container_title_program_languages": "<<< 喜欢的语言 / Like Programming Languages >>>",
     "container_content_program_languages": [
-        "JavaScript（网站）",
-        "HTML（编程..语言？）",
-        "CSS（编程....语言？？？）",
-        "Python（数字相关）",
-        "C#（Unity/Kyle君）",
-        "Java（Discord机器人）"
+        "C# [ Unity ]",
+        "Java [ Minecraft Modding ]",
+        "C++ [ Unreal Engine ] ",
+        "javaScript [ Webpages ]",
+        "HTML / CSS [ Webpage ]",
+        "Python [ AI ]"
     ],
-    "container_title_games": "<< 游戏 >>",
+    "container_title_games": "<< 联系方式 / Contacts >>",
     "container_content_play_games": [
-        "Minecraft",
-        "鸣潮",
-        "Minecraft JE",
-        "VRChat"
+        "Twitter",
+        "Discord",
+        "Github"
     ],
-    "container_title_developing": "<<< 开发中 >>>",
+    "container_title_developing": "<<< 正在开发中 / Developing >>>",
     "ChronosFall_title": "<i>Chronos Fall</i>",
     "ChronosFall_content": [
-        "在近未来，由于突然发生的<br>\"<b>时空崩坏</b>\"，世界的大部分都崩塌了。然而，一些地区奇迹般地免于崩坏，作为<b>\"时间断层\"</b>继续存在着。在那里，幸存的人类静静地继续着他们的生活。",
-        "作为在时间断层中设立的公安<b>\"STPS\"</b>的主人公，追寻时空崩坏的谜团，目标是与数年前失踪的弟弟重逢。",
-        "<i>动作角色扮演游戏 - Unity HDRP 6000.0.57F1</i>"
+        "突如发生的<br>\"时空崩塌\"</b>摧毁了世界的大部分地区的近未来。然而，部分区域奇迹般地幸免于难，并以<b>“时间断层”</b>的形式持续存在。幸存的人类在其中安静地生活着。",
+        "作为在时间断层建立的组织 **“STPS”** 的主角，您将追逐时空崩塌的谜团，并寻求与数年前失散的姐弟重聚。",
+        "<i>Action Role Playing Game - Unity HDRP 6000.0.58F1</i>"
     ],
-    "control_button_translate": "日本語 / English"
+    "control_button_translate": "翻译 / Translate"
 }

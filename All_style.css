@@ -57,7 +57,7 @@ body {
     /* グラデーション */
     background: linear-gradient(to bottom, #2d5cb4, #0b2453, #020b2b);
     color: white;
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: "Science Gothic", "Noto Sans JP", sans-serif;
     position: relative;
     /* ::before の基準とするため */
     min-height: 100vh;
@@ -122,11 +122,67 @@ body {
 }
 
 .titles {
-    text-align: center;
-    background-color: #172b4d;
+    font-style: italic;
+    font-size: 3.1vh;
+    text-align: left;
+    background: #172b4d;
+    display: inline-block;
+    padding: 0.7vh 0;
     margin: 5px;
     position: relative;
     z-index: 1;
+    animation:
+        RightSlide 1.5s ease forwards,
+        blinking 2.5s 1s none,
+        rgb-blink 1s 1.5s infinite;
+}
+
+@keyframes RightSlide {
+    0% {
+        transform: translateX(-100vh);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* 点滅用 */
+@keyframes blinking 
+    {
+    0%   { opacity: 1; }
+    3%   { opacity: 0.4; }
+    6%   { opacity: 1; }
+    7%   { opacity: 0.4; }
+    8%   { opacity: 1; }
+    9%   { opacity: 1; }
+    10%  { opacity: 0.1; }
+    11%  { opacity: 1; }
+    50%  { opacity: 1; }
+    52%  { opacity: 0.5; }
+    54%  { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+@keyframes rgb-blink {
+    0% {
+        opacity: 1;
+        text-shadow: 2px 0 red, -2px 0 blue;
+    }
+    5% {
+        opacity: 0.8;
+        text-shadow: none;
+    }
+    10% {
+        opacity: 1;
+        text-shadow: -2px 0 red, 2px 0 blue;
+    }
+    15% {
+        text-shadow: none;
+    }
+    100% {
+        text-shadow: none;
+        opacity: 1;
+    }
 }
 
 .urllink {
@@ -136,11 +192,40 @@ body {
 
 /* タイトルの下線 */
 .underline {
-    padding: 4px;
-    background-color: #3f5270;
+    padding: 3px;
+    background-color: #00927f48;
     margin: 0px 0 10px 0;
     position: relative;
     z-index: 1;
+}
+
+.underline_inner {
+    background-color: #00e1ffa1;
+    position: absolute;
+    z-index: 2;
+    padding : 0.6vh;
+    width: 10vw;
+    left: 5vh;
+    top: -0.35vh;
+    animation:
+        AnimationHide 1s ease,
+        LeftSlide 1.5s 1s ease-in-out forwards;
+}
+@keyframes AnimationHide {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes LeftSlide {
+    0% {
+        transform: translateX(200vh);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 /* ボタン */

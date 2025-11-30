@@ -70,31 +70,35 @@ function ApplyTranslate(data) {
         let TranslatedText = data[key];
         // テキストが存在する場合は更新
         if (data[key]) {
-            //もしArray要素なら
-            if (Array.isArray(TranslatedText)) {
-                //HEADERのサブタイトルはランダムに1つ選択
-                if (key === "header_inner_hello_subtitle") {
-                    var random = Math.floor(Math.random() * (TranslatedText.length));
-                    console.warn(` [ +ARRAY ] Translated ${key} to: ${TranslatedText[random]} with random index ${random}`);
-                    element.innerHTML = TranslatedText[random];
-                } else {
-                    console.warn(` [ ARRAY ] Translated ${key} to: ${TranslatedText}`);
-                    // 配列の各要素をカンマで結合してから分割
-                    SplitComma(TranslatedText.join(', '), element, key);
-                }
-            } else {
-                console.log(`Translated ${key} to: ${TranslatedText}`);
-                // 文字列の場合もカンマ分割を試行
-                SplitComma(TranslatedText, element, key);
-            }
+            DisplayText(TranslatedText,key,element);
         } else {
             console.warn(`Translation key "${key}" not found in ${data}`);
         }
     });
 }
 
+function DisplayText(TranslatedText,key,element) {
+    //もしArray要素なら
+    if (Array.isArray(TranslatedText)) {
+        //HEADERのサブタイトルはランダムに1つ選択
+        if (key === "header_inner_hello_subtitle") {
+            var random = Math.floor(Math.random() * (TranslatedText.length));
+            console.warn(` [ +ARRAY ] Translated ${key} to: ${TranslatedText[random]} with random index ${random}`);
+            element.innerHTML = TranslatedText[random];
+        } else {
+            console.warn(` [ ARRAY ] Translated ${key} to: ${TranslatedText}`);
+            // 配列の各要素をカンマで結合してから分割
+            SplitComma(TranslatedText.join(', '), element, key);
+        }
+    } else {
+        console.log(`Translated ${key} to: ${TranslatedText}`);
+        // 文字列の場合もカンマ分割を試行
+        SplitComma(TranslatedText, element, key);
+    }
+}
+
 // カンマで分割する関数
-function SplitComma(TranslatedText, element,key) {
+function SplitComma(TranslatedText, element, key) {
     if (TranslatedText.includes(',')) {
         const textArray = TranslatedText.split(',').map(text => text.trim());
         let htmlContent = '';
