@@ -165,7 +165,7 @@ body {
 @keyframes rgb-blink {
     0% {
         opacity: 1;
-        text-shadow: 2px 0 red, -2px 0 blue;
+        text-shadow: 15px -8px red, -2px 0 blue;
     }
     5% {
         opacity: 0.8;
@@ -173,7 +173,7 @@ body {
     }
     10% {
         opacity: 1;
-        text-shadow: -2px 0 red, 2px 0 blue;
+        text-shadow: -14px -7px red, -13px 11px 15px blue;
     }
     15% {
         text-shadow: none;
