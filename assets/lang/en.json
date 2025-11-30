@@ -4,14 +4,14 @@
         "I've only been developing lately",
         "VRChat is too much fun"
     ],
-    "container_title_showcase": "<< Showcase / ShowCase >>",
-    "container_title_introduction": "<<< Self-Introduction / Introduction >>>",
+    "container_title_showcase": "<< ShowCase >>",
+    "container_title_introduction": "<<< Self-Introduction >>>",
     "container_content_introduction": [
         "Hello! I'm just a shark lover living in Japan.",
         "I create various things in my free time, mainly games.",
         "I've played VRChat so much I reached KnownUser. Let's be friends!"
     ],
-    "container_title_program_languages": "<<< Favorite Languages / Like Programming Languages >>>",
+    "container_title_program_languages": "<<< Favorite Languages >>>",
     "container_content_program_languages": [
         "C# [ Unity ]",
         "Java [ Minecraft Modding ]",
@@ -20,18 +20,18 @@
         "HTML / CSS [ Webpage ]",
         "Python [ AI ]"
     ],
-    "container_title_games": "<< Contact / Contacts >>",
+    "container_title_games": "<< Contact >>",
     "container_content_play_games": [
         "Twitter",
         "Discord",
         "Github"
     ],
-    "container_title_developing": "<<< In Development / Developing >>>",
+    "container_title_developing": "<<< In Development >>>",
     "ChronosFall_title": "<i>Chronos Fall</i>",
     "ChronosFall_content": [
         "The near future where most of the world was destroyed by the sudden<br>\"Spacetime Collapse\"</b>. However, some areas miraculously escaped the destruction and continue to exist as <b>\"Time Faults\"</b>. Surviving humanity quietly carries on its life there.",
         "As the protagonist working for **\"STPS\"**, an organization established within the Time Faults, you chase the mystery of the Spacetime Collapse, aiming to reunite with your lost sibling from several years ago.",
         "<i>Action Role Playing Game - Unity HDRP 6000.0.58F1</i>"
     ],
-    "control_button_translate": "Translate / 翻译"
+    "control_button_translate": "翻译 / 翻訳"
 }
