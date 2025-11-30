@@ -57,7 +57,7 @@ body {
     /* グラデーション */
     background: linear-gradient(to bottom, #2d5cb4, #0b2453, #020b2b);
     color: white;
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: "Science Gothic", "Noto Sans JP", sans-serif;
     position: relative;
     /* ::before の基準とするため */
     min-height: 100vh;
@@ -204,12 +204,12 @@ body {
     position: absolute;
     z-index: 2;
     padding : 0.6vh;
-    width: 10vh;
+    width: 10vw;
     left: 5vh;
     top: -0.35vh;
     animation:
         AnimationHide 1s ease,
-        LeftSlide 1.5s 1s ease forwards;
+        LeftSlide 1.5s 1s ease-in-out forwards;
 }
 @keyframes AnimationHide {
     0% {
@@ -221,7 +221,7 @@ body {
 }
 @keyframes LeftSlide {
     0% {
-        transform: translateX(100vh);
+        transform: translateX(200vh);
     }
     100% {
         transform: translateX(0);
