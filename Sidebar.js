@@ -1,7 +1,6 @@
-function stickySidebar()
-{
+function stickySidebar() {
     const sidebar = document.querySelector(".sidebar");
-    let windowTop = window.pageYOffset + 50;
+    let windowTop = window.scrollY + 50;
 
     sidebar.style.top = windowTop + "px";
 }
