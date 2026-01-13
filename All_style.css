@@ -393,7 +393,7 @@ p,
     border-left: 2px solid #00ffff;
     box-shadow: 0 0 10px rgba(0, 255, 255, 0.6), 0 0 20px rgba(0, 255, 255, 0.4);
     border-radius: 10px 0 0 10px;
-    z-Index: 100;
+    z-index: 100;
     /* ホバー時のアニメーション */
     transition: width .6s ease-in-out, background .6s ease-in-out;
     /* 背景ぼかし */
