@@ -1,4 +1,5 @@
 <html class="lenis lenis-smooth">
+<meta charset="utf-8">
 
 <head>
     <title>Introduction</title>
@@ -76,18 +77,24 @@
             </div>
         </div>
     </div>
-    <!--翻訳ボタン(後で場所を移動)-->
-    <div class="control_pannel">
-        <button type="button" class="TranslateButton button"
-            id="%control_button_translate">%control_button_translate</button>
+    <!--サイドバー-->
+    <div class="sidebar">
+        <div class="control_pannel">
+            <button class="TranslateButton button">
+                <img src="assets/images/ui/ei-translation.png" alt="Translate" style="width: 100%; height: auto;">
+                <span id="%control_button_translate">%control_button_translate</span>
+            </button>
+        </div>
     </div>
+
     <!--フッター-->
     <div class="bottom">
-        <p class="bottom-text">Ver 1.1.1</p>
-        <p class="bottom-text">2025 medakoro0321 / Github Pages</p>
+        <p class="bottom-text">Ver 3.1.1</p>
+        <p class="bottom-text">2026 samekoro0321(medakoro0321) / Github Pages</p>
         <p class="bottom-text">License : CC BY-NC 4.0</p>
         <p class="bottom-text">This page's content is not affiliated with any company or organization.</p>
     </div>
+
     <!--スクリプト-->
     <!-- Lenisライブラリを最初に読み込む -->
     <script src="https://unpkg.com/lenis@1.3.8/dist/lenis.min.js"></script>
@@ -97,6 +104,8 @@
     <script src="translate.js"></script>
     <!--ショーケースを表示-->
     <script src="show_case.js"></script>
+    <!--サイドバー-->
+    <script src="Sidebar.js"></script>
 </body>
 
 </html>
