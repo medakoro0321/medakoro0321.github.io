@@ -1,6 +1,7 @@
 // 変数代入
 let TranslateButton = document.querySelector('.TranslateButton');
 let NowLang = "";
+let ChangedLang = "";
 
 // 開いた際に更新
 window.onload = function () {
@@ -20,40 +21,34 @@ function getLanguageFromHash() {
 
 // イベントリスナーの追加
 TranslateButton.addEventListener('click', function () {
-    AllTranslatePage("change");
+    AllTranslatePage();
 });
 
-function AllTranslatePage(ChangeLang) {
-    //変更設定がされた時の処理
-    if (ChangeLang === "change") {
-        if (NowLang === "ja") ChangeLang = "en";
-        else if (NowLang === "en") ChangeLang = "zh";
-        else ChangeLang = "ja"; // 初期値を日本語に設定
-    } else {
-        // 言語ごとの処理
-        switch (ChangeLang) {
-            case "ja":
-                //ja
-                break;
-            case "en":
-                //en
-                break;
-            case "zh":
-                //zh
-                break;
-        }
+function AllTranslatePage() {
+    switch (NowLang)
+    {
+        case "ja":
+            Changedlang = "en";
+            break;
+        case "en":
+            Changedlang = "zh";
+            break;
+        default:
+            Changedlang = "ja";
+            break;
     }
+    
     // 言語データロード
-    LoadTranslate(ChangeLang);
+    LoadTranslate(Changedlang);
 }
 
-async function LoadTranslate(ChangeLang) {
+async function LoadTranslate(Changedlang) {
     // jsonファイルからデータを取得
-    await fetch(`./assets/lang/${ChangeLang}.json`)
+    await fetch(`./assets/lang/${Changedlang}.json`)
         .then(response => response.json())
         .then(data => {
             // 他の要素も同様に更新
-            NowLang = ChangeLang; // 現在の言語を更新
+            NowLang = Changedlang; // 現在の言語を更新
             ApplyTranslate(data);
         })
         .catch(error => console.error('Error fetching translation:', error));
