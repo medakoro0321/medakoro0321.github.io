@@ -1,6 +1,6 @@
 //assets/images/show_case内のファイル数
 const path = "assets/images/showcase/";
-const ShowCaseImageFiles = 3;
+const ShowCaseImageFiles = 5;
 ShowCaseImageSet();
 
 
@@ -8,7 +8,7 @@ ShowCaseImageSet();
 function ShowCaseImageSet() {
     for (let i = 0; i < ShowCaseImageFiles; i++) {
         //画像のパスを設定
-        const imagePath = `${path}pic_${i + 1}.png`;
+        const imagePath = `${path}pic_${i + 1}.webp`;
         //画像要素を作成
         const imgElement = document.createElement('img');
         imgElement.src = imagePath;
@@ -27,8 +27,6 @@ function ShowCaseImageSet() {
         }
     }
 }
-
-
 
 let currentSlide = 0;
 const images = document.querySelectorAll('.showcase-image');
